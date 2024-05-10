@@ -1,3 +1,4 @@
+"use client"
 import { Button, IconButton } from "@mui/material";
 import styles from "./index.module.css";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
@@ -10,7 +11,9 @@ const AboutPage = () => {
       <IconButton>
       <AccessAlarmIcon />
       </IconButton>
-      <IconButton>
+      <IconButton onClick={() => {
+        alert('Ruslan')
+      }}>
       <YouTubeIcon style={{color: "red"}} />
       </IconButton>
       <Button className={styles.btn} variant="outlined">
